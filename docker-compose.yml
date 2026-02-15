@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build:
+      context: ../dental-management-system-fe
+      dockerfile: Dockerfile
+    container_name: dental-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
