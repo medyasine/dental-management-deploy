@@ -1,8 +1,6 @@
 services:
   frontend:
-    build:
-      context: ../dental-management-system-fe
-      dockerfile: Dockerfile
+    image: ghcr.io/medyasine/dental-fe:latest
     container_name: dental-frontend
     ports:
       - "8080:80"
