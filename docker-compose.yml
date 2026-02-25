@@ -6,7 +6,7 @@ services:
       - "8080:80"
     restart: unless-stopped
   backend:
-    image: ghcr.io/medyasyne/dental-be:latest
+    image: ghcr.io/medyasine/dental-be:latest
     container_name: dental-backend
     ports:
       - "8081:8080"
